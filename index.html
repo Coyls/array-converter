@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/index.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Array Converter</title>
+</head>
+<body>
+
+<div id="array-container">
+
+    <div id="add-param-container">
+        <label for="add-param">Ajouter des parametres d'obstacle :</label>
+        <button id="add-param" name="add-param">+</button>
+    </div>
+    <form id="param-array" action="">
+        <div id="param-container">
+            <input name="param" class="param" type="text">
+        </div>
+        <button id="submit-param">Ajouter les parametres</button>
+    </form>
+    <p id="ls-param">Veuiller ajouter des parametres</p>
+
+
+    <div id="add-param-item-container">
+        <label for="add-param-item">Ajouter des parametres d'item :</label>
+        <button id="add-param-item" name="add-param">+</button>
+    </div>
+    <form id="param-array-item" action="">
+        <div id="param-container-item">
+            <input name="param-item" class="param-item" type="text">
+        </div>
+        <button id="submit-param-item">Ajouter les parametres</button>
+    </form>
+    <p id="ls-param-item">Veuiller ajouter des parametres</p>
+
+</div>
+
+<form id="array-form">
+    <button id="submit-array">Convert array</button>
+    <textarea id="array" name="array" placeholder="Place your array here "></textarea>
+    <label id="label-array" for="array">[]</label>
+</form>
+
+
+<!----------- script ----------->
+<script src="app.js"></script>
+</body>
+</html>

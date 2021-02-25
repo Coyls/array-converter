@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+}
+
+html {
+    background-color: #131516;
+    color: #fff;
+}
+
+textarea {
+    resize: none;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+#array, #label-array {
+    position: absolute;
+    width: 50vw;
+    background-color: #000;
+    color: #fff;
+}
+
+#array {
+    height: 50vh;
+    left: 0;
+    bottom: 0;
+}
+
+#label-array {
+    height: 100vh;
+    right: 0;
+}
+
+textarea::placeholder {
+    padding: 20px;
+    font-size: 20px;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+/*-------------------------------- array-container -----------------------------------*/
+
+#add-param-container, #add-param-item-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 10px 50px;
+}
+
+
+#add-param, #add-param-item {
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background-color: #808080;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+/*----------------------------------------- form -----------------------------------------*/
+
+#param-container, #param-container-item {
+    margin-left: 50px;
+}
+
+#param-array, #param-array-item {
+    display: flex;
+    flex-direction: row;
+}
+
+#submit-param, #submit-param-item {
+    margin-left: 20px;
+    color: #fff;
+    background-color: #808080;
+    padding: 5px;
+}
+
+.param, .param-item {
+    background-color: #CCC;
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+}
+
+#submit-array {
+    background-color: #CCC;
+    padding: 10px;
+    position: absolute;
+    left: 50px;
+    top: 43vh;
+}
+
+#ls-param, #ls-param-item {
+    margin: 50px 0 10px 50px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* phone */
+@media screen and (max-width: 640px) {
+    body {
+        flex-direction: column-reverse;
+    }
+
+    textarea, label {
+        height: 50vh;
+        width: 100vw;
+    }
+}
+
